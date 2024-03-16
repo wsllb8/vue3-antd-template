@@ -1,0 +1,13 @@
+# http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+
+[*.md]
+# 在 Markdown 文件的末尾不插入空行
+insert_final_newline = false
+# 在 Markdown 文件中不删除行尾的空白字符
+trim_trailing_whitespace = false
