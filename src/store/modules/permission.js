@@ -18,6 +18,7 @@ const usePermissionStore = defineStore('permission', {
       return routes
     },
     setPermissions(permissions) {
+      this.asyncRoutes = []
       this.permissions = permissions
       const menus = permissions.map((item) => {
         this.asyncRoutes.push(item)
