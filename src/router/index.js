@@ -9,10 +9,10 @@ import { unref, markRaw, toRaw } from 'vue'
 export const constantRoutes = [
   {
     path: '/',
-    name: 'Root',
-    redirect: '/admin/user',
+    name: 'Home',
+    component: () => import('@/views/home/index.vue'),
     meta: {
-      title: 'root',
+      title: '主页',
     },
   },
   {
